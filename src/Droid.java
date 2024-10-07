@@ -11,6 +11,9 @@ public class Droid {
 
     //main method.
     public static void main(String[] args){
+        //new object.
+        Droid Codey = new Droid("Codey");
+        System.out.println(Codey.name);
 
     }
 }
