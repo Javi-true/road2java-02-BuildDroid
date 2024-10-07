@@ -9,11 +9,17 @@ public class Droid {
         name = droidName;
     }
 
+    //toString method.
+
+    public String toString(){
+        return "Hello, I'm the droid: " + name;
+    }
+
     //main method.
     public static void main(String[] args){
         //new object.
         Droid Codey = new Droid("Codey");
-        System.out.println(Codey.name);
+        System.out.println(Codey);
 
     }
 }
