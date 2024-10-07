@@ -20,14 +20,16 @@ public class Droid {
         return name + " is performing task: " + task;
     }
 
+    //method 2.
+    public String energyReport(){
+        return name+"'s energy level is at: "+batteryLevel+"%";
+    }
+
+
     //main method.
     public static void main(String[] args){
         //new object.
         Droid Codey = new Droid("Codey");
-        System.out.println(Codey.name);
-        System.out.println(Codey.batteryLevel);
-        System.out.println(Codey.performTask("Dancing"));
-        System.out.println(Codey.batteryLevel);
 
 
     }
