@@ -25,12 +25,30 @@ public class Droid {
         return name+"'s energy level is at: "+batteryLevel+"%";
     }
 
+    //Energy transfer method.
+    public String energyTransfer(Droid droid){
+        batteryLevel -= 10;
+        droid.batteryLevel +=10;
+        return "Energy transferred";
+    }
 
     //main method.
     public static void main(String[] args){
         //new object.
         Droid Codey = new Droid("Codey");
 
+        //new object.
+        Droid R2D2 = new Droid("R2D2");
 
+        System.out.println(Codey.energyReport());
+        System.out.println(Codey.performTask("Battle"));
+        System.out.println(Codey.energyReport());
+        System.out.println(R2D2.energyReport());
+        //control
+        System.out.println("-----------------------------------------------");
+        //test transfer.
+        System.out.println(Codey.energyTransfer(R2D2));
+        System.out.println(Codey.energyReport());
+        System.out.println(R2D2.energyReport());
     }
 }
